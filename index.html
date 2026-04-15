@@ -125,6 +125,109 @@
     .tbl-wrap { padding:16px; }
     .legend { margin:0 16px 32px; }
   }
+
+  /* COUNTER-ARGUMENT STYLES */
+  .page { padding:32px 40px 48px; }
+  .tab-btn.active.te { color:var(--red); border-bottom-color:var(--red); }
+  .tab-btn.active.tf { color:var(--teal); border-bottom-color:var(--teal); }
+  .tab-btn.active.tg { color:var(--orange); border-bottom-color:var(--orange); }
+  .c-section { margin-bottom:32px; }
+  .c-section-title { font-family:'Barlow Condensed',sans-serif; font-size:18px; font-weight:800; text-transform:uppercase; letter-spacing:1px; color:var(--dark); margin-bottom:4px; }
+  .c-section-sub { font-size:12px; color:var(--muted); margin-bottom:16px; }
+  .challenge-grid { display:flex; flex-direction:column; gap:16px; }
+  .challenge-card { background:#fff; border-radius:8px; box-shadow:0 2px 10px rgba(0,0,0,0.07); overflow:hidden; }
+  .challenge-header { display:flex; align-items:center; gap:14px; padding:16px 20px; border-bottom:1px solid var(--border); }
+  .challenge-num { font-family:'Barlow Condensed',sans-serif; font-size:32px; font-weight:800; color:var(--red); line-height:1; flex-shrink:0; width:36px; }
+  .challenge-title { font-family:'Barlow Condensed',sans-serif; font-size:16px; font-weight:700; text-transform:uppercase; letter-spacing:1px; color:var(--dark); }
+  .challenge-subtitle { font-size:12px; color:var(--muted); margin-top:2px; }
+  .challenge-verdict { margin-left:auto; font-size:10px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; padding:4px 10px; border-radius:20px; white-space:nowrap; }
+  .verdict-challenge { background:rgba(176,48,32,0.1); color:var(--red); border:1px solid rgba(176,48,32,0.25); }
+  .verdict-agree { background:rgba(45,122,45,0.1); color:var(--green); border:1px solid rgba(45,122,45,0.25); }
+  .challenge-body { padding:16px 20px; display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  .challenge-body.full { grid-template-columns:1fr; }
+  .challenge-col { }
+  .col-label { font-size:10px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:var(--muted); margin-bottom:8px; padding-bottom:6px; border-bottom:1px solid var(--border); }
+  .col-label.red { color:var(--red); }
+  .col-label.green { color:var(--green); }
+  .body-text { font-size:13px; color:var(--mid); line-height:1.7; }
+  .body-text strong { color:var(--dark); }
+  .body-text ul { margin-top:8px; padding-left:16px; }
+  .body-text li { margin-bottom:4px; }
+  .agree-box { background:var(--green-lt); border:1px solid rgba(45,122,45,0.2); border-radius:8px; padding:18px 22px; margin-bottom:16px; }
+  .agree-title { font-family:'Barlow Condensed',sans-serif; font-size:13px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:var(--green); margin-bottom:10px; }
+  .agree-items { display:flex; flex-direction:column; gap:8px; }
+  .agree-item { display:flex; gap:10px; font-size:13px; color:var(--mid); line-height:1.5; }
+  .agree-check { color:var(--green); font-size:16px; flex-shrink:0; }
+  .scenario-compare { display:grid; grid-template-columns:1fr 8px 1fr; gap:0; margin-bottom:16px; background:var(--bg3); border-radius:8px; overflow:hidden; box-shadow:0 2px 10px rgba(0,0,0,0.07); }
+  .scenario-divider { background:var(--bg3); }
+  .scenario-block { background:#fff; padding:24px; }
+  .scenario-block.now   { border-top:4px solid var(--green); }
+  .scenario-block.defer { border-top:4px solid var(--red); }
+  .scenario-eyebrow { font-size:10px; font-weight:700; letter-spacing:2.5px; text-transform:uppercase; margin-bottom:6px; }
+  .scenario-eyebrow.green { color:var(--green); }
+  .scenario-eyebrow.red   { color:var(--red); }
+  .scenario-stitle { font-family:'Barlow Condensed',sans-serif; font-size:22px; font-weight:800; text-transform:uppercase; color:var(--dark); margin-bottom:16px; }
+  .scenario-row { display:flex; justify-content:space-between; align-items:center; padding:8px 0; border-bottom:1px solid var(--border); font-size:13px; }
+  .scenario-row:last-child { border-bottom:none; }
+  .scenario-row.total { padding-top:12px; border-top:2px solid var(--border); border-bottom:none; margin-top:4px; }
+  .scenario-row-label { color:var(--mid); }
+  .scenario-row-val { font-family:'Barlow Condensed',sans-serif; font-size:17px; font-weight:700; }
+  .scenario-row-val.green { color:var(--green); }
+  .scenario-row-val.red   { color:var(--red); }
+  .scenario-row-val.dark  { color:var(--dark); }
+  .scenario-row-val.muted { color:var(--muted); }
+  .delta-box { background:#fff; border-radius:8px; box-shadow:0 2px 10px rgba(0,0,0,0.07); border-top:4px solid var(--teal); padding:24px; margin-bottom:24px; }
+  .delta-title { font-family:'Barlow Condensed',sans-serif; font-size:13px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:var(--teal); margin-bottom:16px; }
+  .delta-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:2px; background:var(--bg3); border-radius:6px; overflow:hidden; }
+  .delta-cell { background:#fff; padding:18px 16px; text-align:center; }
+  .delta-cell.highlight { background:rgba(14,116,144,0.06); }
+  .delta-label { font-size:9px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:var(--muted); margin-bottom:5px; }
+  .delta-val { font-family:'Barlow Condensed',sans-serif; font-size:26px; font-weight:800; color:var(--teal); line-height:1; }
+  .delta-sub { font-size:10px; color:var(--muted); margin-top:3px; }
+  .sensitivity-box { background:#fff; border-radius:8px; box-shadow:0 2px 10px rgba(0,0,0,0.07); padding:24px; margin-bottom:24px; border-left:5px solid var(--yellow); }
+  .sens-title { font-family:'Barlow Condensed',sans-serif; font-size:13px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:var(--yellow); margin-bottom:16px; }
+  .sens-table { width:100%; border-collapse:collapse; font-size:13px; }
+  .sens-table th { font-family:'Barlow Condensed',sans-serif; font-size:10px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--muted); padding:8px 12px; text-align:left; background:var(--bg2); border-bottom:2px solid var(--border); }
+  .sens-table td { padding:10px 12px; border-bottom:1px solid rgba(0,0,0,0.05); color:var(--mid); }
+  .sens-table tr:last-child td { border-bottom:none; }
+  .sens-table .good { color:var(--green); font-weight:700; }
+  .sens-table .ok   { color:var(--orange); font-weight:700; }
+  .reframe-box { background:var(--green-lt); border:1px solid rgba(45,122,45,0.2); border-radius:8px; padding:22px 26px; margin-bottom:24px; }
+  .reframe-title { font-family:'Barlow Condensed',sans-serif; font-size:15px; font-weight:800; text-transform:uppercase; letter-spacing:1px; color:var(--green2); margin-bottom:12px; }
+  .reframe-text { font-size:13px; color:var(--mid); line-height:1.8; }
+  .reframe-text strong { color:var(--dark); }
+  @media(max-width:900px) {
+    .challenge-body { grid-template-columns:1fr; }
+    .scenario-compare { grid-template-columns:1fr; }
+    .delta-grid { grid-template-columns:repeat(2,1fr); }
+    .page { padding:20px 16px 40px; }
+  }
+
+  /* MAINTENANCE PROJECTION */
+  .maint-summary-grid { display:grid; grid-template-columns:1fr 1px 1fr; gap:0; background:var(--bg3); border-radius:8px; overflow:hidden; box-shadow:0 2px 12px rgba(0,0,0,0.08); margin-bottom:24px; }
+  .maint-block { background:#fff; padding:24px; }
+  .maint-block.t27 { border-top:4px solid var(--green); }
+  .maint-block.t28 { border-top:4px solid var(--orange); }
+  .maint-eyebrow { font-size:10px; font-weight:700; letter-spacing:2.5px; text-transform:uppercase; margin-bottom:6px; }
+  .maint-eyebrow.green  { color:var(--green); }
+  .maint-eyebrow.orange { color:var(--orange); }
+  .maint-block-title { font-family:'Barlow Condensed',sans-serif; font-size:20px; font-weight:800; text-transform:uppercase; color:var(--dark); margin-bottom:16px; }
+  .maint-stat-row { display:flex; justify-content:space-between; align-items:center; padding:9px 0; border-bottom:1px solid var(--border); font-size:13px; }
+  .maint-stat-row:last-child { border-bottom:none; }
+  .maint-stat-row.total-row { padding-top:12px; border-top:2px solid var(--border); border-bottom:none; margin-top:4px; }
+  .maint-stat-label { color:var(--mid); }
+  .maint-stat-val { font-family:'Barlow Condensed',sans-serif; font-size:18px; font-weight:700; }
+  .maint-stat-val.green { color:var(--green); }
+  .maint-stat-val.red   { color:var(--red); }
+  .maint-stat-val.dark  { color:var(--dark); }
+  .maint-combined { background:#fff; border-radius:8px; box-shadow:0 2px 12px rgba(0,0,0,0.08); border-top:4px solid var(--teal); padding:24px; margin-bottom:24px; display:grid; grid-template-columns:repeat(3,1fr); gap:2px; }
+  .maint-combined-cell { padding:16px; text-align:center; }
+  .maint-combined-cell.hl { background:rgba(14,116,144,0.06); border-radius:4px; }
+  .maint-combined-label { font-size:9px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:var(--muted); margin-bottom:5px; }
+  .maint-combined-val { font-family:'Barlow Condensed',sans-serif; font-size:26px; font-weight:800; color:var(--teal); line-height:1; }
+  .maint-combined-sub { font-size:10px; color:var(--muted); margin-top:3px; }
+  .maint-note { background:#fffbee; border-left:4px solid var(--yellow); border-radius:0 6px 6px 0; padding:14px 18px; font-size:12px; color:var(--mid); line-height:1.7; margin-bottom:24px; }
+  .maint-note strong { color:var(--dark); }
 </style>
 </head>
 <body>
@@ -325,6 +428,9 @@
   <button class="tab-btn tb" onclick="showTab('tb',this)">📅 2028 Replacements (19 assets)</button>
   <button class="tab-btn tc" onclick="showTab('tc',this)">📋 Combined View (43 assets)</button>
   <button class="tab-btn td" onclick="showTab('td',this)">📊 Avg Cost/Mile · By Manufacturer</button>
+  <button class="tab-btn te" onclick="showTab('te',this)">⚔️ Challenge the Framework</button>
+  <button class="tab-btn tf" onclick="showTab('tf',this)">📐 TCO Comparison</button>
+  <button class="tab-btn tg" onclick="showTab('tg',this)">🔧 Maintenance Cost Projection</button>
 </div>
 
 <!-- TAB A: 2027 -->
@@ -422,6 +528,268 @@
   <span>Unit Prices: Slide $71,500 · Tractor $150,000 · Flatbed $160,000 · Emission avoidance $15K/unit (conservative)</span>
 </div>
 
+
+<div class="tab-panel" id="tab-te">
+<div class="page">
+  <div class="c-section">
+    <div class="c-section-title">Where the ROI Framework Gets It Wrong</div>
+    <div class="c-section-sub">Five specific challenges to the ROI-based decision framework, grounded in fleet operational reality</div>
+    <div class="challenge-grid">
+      <div class="challenge-card">
+        <div class="challenge-header">
+          <div class="challenge-num">1</div>
+          <div><div class="challenge-title">The ROI Framework Treats Replacement as Optional</div><div class="challenge-subtitle">Fundamental framing error — compares pre-buy to capital alternatives rather than cost of the same purchase later</div></div>
+          <div class="challenge-verdict verdict-challenge">Challenge</div>
+        </div>
+        <div class="challenge-body">
+          <div class="challenge-col"><div class="col-label red">The Framework Says</div><div class="body-text">Compare savings to hurdle rate and alternative uses of capital. If the return doesn't exceed ~10%, don't proceed. Treat it like an investment decision.</div></div>
+          <div class="challenge-col"><div class="col-label green">The Counter-Argument</div><div class="body-text">These 43 assets <strong>must be replaced</strong> — 24 are already at or past lifecycle thresholds. The decision is not <em>whether</em> to buy, it's <em>when</em> and at <em>what price</em>. The correct comparison is: <strong>buy now at negotiated pricing vs. buy in 2027/2028 at standard pricing + emission upcharge</strong>. The cost of deferral is $1,837,000 in higher purchase prices alone — before maintenance costs on aging assets are included.</div></div>
+        </div>
+      </div>
+      <div class="challenge-card">
+        <div class="challenge-header">
+          <div class="challenge-num">2</div>
+          <div><div class="challenge-title">Ongoing Maintenance Costs Are Invisible in the Model</div><div class="challenge-subtitle">Deferral isn't cost-neutral — aging assets accumulate maintenance spend every month they stay in service</div></div>
+          <div class="challenge-verdict verdict-challenge">Challenge</div>
+        </div>
+        <div class="challenge-body">
+          <div class="challenge-col"><div class="col-label red">The Framework Says</div><div class="body-text">The savings of $574K (2027) and $434K (2028) are the only financial benefit. Evaluate these against the return threshold.</div></div>
+          <div class="challenge-col"><div class="col-label green">The Counter-Argument</div><div class="body-text">The Tier 1 assets carry an average maintenance cost above <strong>$0.50–$0.77/mile</strong> — well above fleet average. Every month of deferral adds real maintenance spend on trucks that should already be replaced. Estimated additional maintenance exposure on deferred assets: <strong>~$529,000</strong> over the deferral period. This cost doesn't appear in the ROI framework at all.</div></div>
+        </div>
+      </div>
+      <div class="challenge-card">
+        <div class="challenge-header">
+          <div class="challenge-num">3</div>
+          <div><div class="challenge-title">The 2028 Group Is Evaluated in Isolation</div><div class="challenge-subtitle">Low-return label ignores that this capital will be spent regardless — just at a higher price</div></div>
+          <div class="challenge-verdict verdict-challenge">Challenge</div>
+        </div>
+        <div class="challenge-body">
+          <div class="challenge-col"><div class="col-label red">The Framework Says</div><div class="body-text">The 2028 group returns only ~4.7% annually. Below hurdle rates. Do not proceed.</div></div>
+          <div class="challenge-col"><div class="col-label green">The Counter-Argument</div><div class="body-text">Passing on the 2028 group doesn't eliminate the capital need — it defers it at full standard pricing with no negotiated discounts and no dealer leverage. Buying now vs. deferring saves <strong>$778,500</strong> in purchase price alone. The "4.7% return" framing obscures the real question: <em>why spend $778,500 more for the same trucks?</em></div></div>
+        </div>
+      </div>
+      <div class="challenge-card">
+        <div class="challenge-header">
+          <div class="challenge-num">4</div>
+          <div><div class="challenge-title">The Dealer Window Is a One-Time Event</div><div class="challenge-subtitle">Negotiated pricing, ground stock, and relationship leverage don't persist — they expire with this transaction</div></div>
+          <div class="challenge-verdict verdict-challenge">Challenge</div>
+        </div>
+        <div class="challenge-body">
+          <div class="challenge-col"><div class="col-label red">The Framework Says</div><div class="body-text">Evaluate each opportunity using a consistent return threshold going forward.</div></div>
+          <div class="challenge-col"><div class="col-label green">The Counter-Argument</div><div class="body-text">The current pricing reflects: <strong>(1)</strong> a one-time contract discount on 20′ Slides, <strong>(2)</strong> negotiated reductions on Tractors and Flatbeds achieved through fleet volume leverage, and <strong>(3)</strong> a window before EPA emission upcharges apply. None of these conditions are guaranteed to recur. A 10% hurdle rate applied uniformly doesn't account for the time-limited nature of this opportunity.</div></div>
+        </div>
+      </div>
+      <div class="challenge-card">
+        <div class="challenge-header">
+          <div class="challenge-num">5</div>
+          <div><div class="challenge-title">The 10% Simple Rule Ignores Operational Risk</div><div class="challenge-subtitle">For a delivery fleet, uptime isn't just a financial metric — overaged assets carry real operational exposure</div></div>
+          <div class="challenge-verdict verdict-challenge">Challenge</div>
+        </div>
+        <div class="challenge-body">
+          <div class="challenge-col"><div class="col-label red">The Framework Says</div><div class="body-text">Only pre-purchase assets that generate ~10%+ annual return. Apply this as a simple, consistent rule.</div></div>
+          <div class="challenge-col"><div class="col-label green">The Counter-Argument</div><div class="body-text">McCoy's operates a <strong>route delivery and jobsite fleet</strong>. A truck breakdown on a jobsite delivery isn't just a maintenance event — it's a customer service failure with downstream revenue and relationship risk. Four Tier 1 assets have already exceeded <strong>both</strong> age and mileage lifecycle simultaneously. The operational risk premium of running these assets beyond lifecycle doesn't appear in a financial return calculation but is very real.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="c-section">
+    <div class="c-section-title">Where We Agree</div>
+    <div class="c-section-sub">The framework makes valid points — these should be acknowledged, not dismissed</div>
+    <div class="agree-box">
+      <div class="agree-title">Valid Points in the Original Framework</div>
+      <div class="agree-items">
+        <div class="agree-item"><span class="agree-check">✓</span><span><strong>Not all pre-buys are equal</strong> — the Slide discount is the strongest opportunity. The framework is right to differentiate.</span></div>
+        <div class="agree-item"><span class="agree-check">✓</span><span><strong>Broad, undisciplined pre-purchasing is risky</strong> — buying trucks outside the replacement pipeline just because pricing is favorable doesn't hold up. This analysis is anchored to lifecycle data.</span></div>
+        <div class="agree-item"><span class="agree-check">✓</span><span><strong>Each opportunity should be evaluated individually</strong> — agreed. This analysis does exactly that: tiered by lifecycle urgency, CPM, and body type with separate savings calculations per group.</span></div>
+        <div class="agree-item"><span class="agree-check">✓</span><span><strong>Capital has a cost</strong> — acknowledged. The TCO tab accounts for this by showing the full cost of deferral rather than only the savings benefit.</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- TAB F: TCO COMPARISON -->
+<div class="tab-panel" id="tab-tf">
+<div class="page">
+  <div class="reframe-box">
+    <div class="reframe-title">The Right Question to Ask</div>
+    <div class="reframe-text">The original framework asks: <em>"Does this pre-buy generate a sufficient return on capital?"</em><br><br>
+    The better question is: <strong>"What does it cost McCoy's to buy these same trucks in 2027–2028 instead of now?"</strong><br><br>
+    Since replacement is not optional, the decision is purely about price timing. The comparison below shows the fully-loaded cost of buying now vs. deferring — including purchase price, negotiated savings, emission avoidance, and disposition proceeds.</div>
+  </div>
+
+  <div class="c-section">
+    <div class="c-section-title">2027 Group — 24 Assets</div>
+    <div class="c-section-sub">5 Slides · 10 Tractor TAs · 9 24′ TA Flatbeds</div>
+    <div class="scenario-compare">
+      <div class="scenario-block now">
+        <div class="scenario-eyebrow green">Buy Now (2026)</div>
+        <div class="scenario-stitle">Revised Dealer Pricing</div>
+        <div class="scenario-row"><span class="scenario-row-label">Purchase Price (24 units)</span><span class="scenario-row-val dark">$3,297,500</span></div>
+        <div class="scenario-row"><span class="scenario-row-label">Negotiated Savings (all types)</span><span class="scenario-row-val green">− $574,000</span></div>
+        <div class="scenario-row"><span class="scenario-row-label">Asset Disposition Proceeds</span><span class="scenario-row-val green">− $480,000</span></div>
+        <div class="scenario-row total"><span class="scenario-row-label" style="font-weight:700;color:var(--dark)">Net Capital Outlay</span><span class="scenario-row-val green">$2,243,500</span></div>
+      </div>
+      <div class="scenario-divider"></div>
+      <div class="scenario-block defer">
+        <div class="scenario-eyebrow red">Defer to 2027</div>
+        <div class="scenario-stitle">Standard Pricing + Emission Upcharge</div>
+        <div class="scenario-row"><span class="scenario-row-label">Purchase Price (original + $15K emission)</span><span class="scenario-row-val dark">$3,782,000</span></div>
+        <div class="scenario-row"><span class="scenario-row-label">No Negotiated Savings Available</span><span class="scenario-row-val muted">— $0</span></div>
+        <div class="scenario-row"><span class="scenario-row-label">Asset Disposition Proceeds</span><span class="scenario-row-val green">− $480,000</span></div>
+        <div class="scenario-row total"><span class="scenario-row-label" style="font-weight:700;color:var(--dark)">Net Capital Outlay</span><span class="scenario-row-val red">$3,302,000</span></div>
+      </div>
+    </div>
+    <div style="background:#fff;border-radius:8px;padding:16px 20px;box-shadow:0 1px 6px rgba(0,0,0,0.07);display:flex;align-items:center;justify-content:space-between;margin-bottom:28px;">
+      <div style="font-size:13px;color:var(--mid);">Cost of deferring the 2027 group to standard 2027 pricing</div>
+      <div><span style="font-family:'Barlow Condensed',sans-serif;font-size:28px;font-weight:800;color:var(--red);">$1,058,500</span><span style="font-size:12px;color:var(--muted);margin-left:6px;">more expensive if deferred</span></div>
+    </div>
+  </div>
+
+  <div class="c-section">
+    <div class="c-section-title">2028 Group — 19 Assets</div>
+    <div class="c-section-sub">5 Slides · 4 Tractor TAs · 10 24′ TA Flatbeds</div>
+    <div class="scenario-compare">
+      <div class="scenario-block now">
+        <div class="scenario-eyebrow green">Buy Now (2026)</div>
+        <div class="scenario-stitle">Revised Dealer Pricing</div>
+        <div class="scenario-row"><span class="scenario-row-label">Purchase Price (19 units)</span><span class="scenario-row-val dark">$2,557,500</span></div>
+        <div class="scenario-row"><span class="scenario-row-label">Negotiated Savings (all types)</span><span class="scenario-row-val green">− $434,000</span></div>
+        <div class="scenario-row"><span class="scenario-row-label">Asset Disposition Proceeds</span><span class="scenario-row-val green">− $380,000</span></div>
+        <div class="scenario-row total"><span class="scenario-row-label" style="font-weight:700;color:var(--dark)">Net Capital Outlay</span><span class="scenario-row-val green">$1,743,500</span></div>
+      </div>
+      <div class="scenario-divider"></div>
+      <div class="scenario-block defer">
+        <div class="scenario-eyebrow red">Defer to 2028</div>
+        <div class="scenario-stitle">Standard Pricing + Emission Upcharge</div>
+        <div class="scenario-row"><span class="scenario-row-label">Purchase Price (original + $15K emission)</span><span class="scenario-row-val dark">$2,902,000</span></div>
+        <div class="scenario-row"><span class="scenario-row-label">No Negotiated Savings Available</span><span class="scenario-row-val muted">— $0</span></div>
+        <div class="scenario-row"><span class="scenario-row-label">Asset Disposition Proceeds</span><span class="scenario-row-val green">− $380,000</span></div>
+        <div class="scenario-row total"><span class="scenario-row-label" style="font-weight:700;color:var(--dark)">Net Capital Outlay</span><span class="scenario-row-val red">$2,522,000</span></div>
+      </div>
+    </div>
+    <div style="background:#fff;border-radius:8px;padding:16px 20px;box-shadow:0 1px 6px rgba(0,0,0,0.07);display:flex;align-items:center;justify-content:space-between;margin-bottom:28px;">
+      <div style="font-size:13px;color:var(--mid);">Cost of deferring the 2028 group to standard 2028 pricing</div>
+      <div><span style="font-family:'Barlow Condensed',sans-serif;font-size:28px;font-weight:800;color:var(--red);">$778,500</span><span style="font-size:12px;color:var(--muted);margin-left:6px;">more expensive if deferred</span></div>
+    </div>
+  </div>
+
+  <div class="delta-box">
+    <div class="delta-title">Full Cost of Deferral — Combined Pipeline</div>
+    <div class="delta-grid">
+      <div class="delta-cell"><div class="delta-label">Higher Purchase Cost</div><div class="delta-val">$1,837,000</div><div class="delta-sub">Buying at standard + emission pricing</div></div>
+      <div class="delta-cell"><div class="delta-label">Est. Added Maintenance</div><div class="delta-val">~$529,200</div><div class="delta-sub">On aging assets during deferral period</div></div>
+      <div class="delta-cell highlight"><div class="delta-label">Total Cost of Deferral</div><div class="delta-val">$2,366,200</div><div class="delta-sub">Fully-loaded estimate</div></div>
+      <div class="delta-cell highlight"><div class="delta-label">Net Investment — Buy Now</div><div class="delta-val">$3,987,000</div><div class="delta-sub">vs. $5,824,000 if deferred</div></div>
+    </div>
+  </div>
+
+  <div class="sensitivity-box">
+    <div class="sens-title">Sensitivity — What If the Emission Upcharge Is Lower?</div>
+    <table class="sens-table">
+      <thead><tr>
+        <th>Emission Upcharge Scenario</th><th>2027 Savings</th><th>2027 Net Buy Now</th>
+        <th>2027 Cost if Deferred</th><th>Savings vs Deferral</th><th>Recommendation</th>
+      </tr></thead>
+      <tbody>
+        <tr><td><strong>$20,000/unit</strong> (high)</td><td>$694,000</td><td>$2,123,500</td><td>$3,302,000</td><td class="good">$1,178,500</td><td class="good">✅ Proceed</td></tr>
+        <tr><td><strong>$15,000/unit</strong> (conservative)</td><td>$574,000</td><td>$2,243,500</td><td>$3,302,000</td><td class="good">$1,058,500</td><td class="good">✅ Proceed</td></tr>
+        <tr><td><strong>$10,000/unit</strong> (low)</td><td>$454,000</td><td>$2,363,500</td><td>$3,302,000</td><td class="good">$938,500</td><td class="good">✅ Proceed</td></tr>
+        <tr><td><strong>$0</strong> (no upcharge)</td><td>$334,000</td><td>$2,483,500</td><td>$3,302,000</td><td class="ok">$818,500</td><td class="ok">⚖️ Still favors buy now</td></tr>
+      </tbody>
+    </table>
+    <div style="font-size:11px;color:var(--muted);margin-top:10px;">Even with zero emission upcharge, buying now at negotiated pricing is still <strong>$818,500 less expensive</strong> than deferring to standard pricing. The case does not depend on the emission upcharge materializing.</div>
+  </div>
+
+</div>
+</div>
+<!-- TAB G: MAINTENANCE PROJECTION -->
+<div class="tab-panel" id="tab-tg">
+<div class="page">
+
+  <div class="maint-note">
+    <strong>Methodology:</strong> Each asset's projected maintenance spend uses its own <strong>actual miles per month (MPM)</strong> from driving history × its <strong>current cost per mile (CPM)</strong> from Column AC. The fleet median CPM of <strong>$0.3753/mi</strong> is the "normal" benchmark. Excess = what these trucks cost above what a typical fleet asset would cost over the same period. The 2027 group uses a <strong>12-month</strong> deferral window; the 2028 group uses <strong>24 months</strong>.
+  </div>
+
+  <div class="maint-summary-grid">
+    <div class="maint-block t27">
+      <div class="maint-eyebrow green">2027 Group · 12-Month Deferral Window</div>
+      <div class="maint-block-title">24 Assets · 12 Months</div>
+      <div class="maint-stat-row"><span class="maint-stat-label">Fleet median CPM benchmark</span><span class="maint-stat-val dark">$0.3753/mi</span></div>
+      <div class="maint-stat-row"><span class="maint-stat-label">Projected maint at fleet avg CPM</span><span class="maint-stat-val green">$262,373</span></div>
+      <div class="maint-stat-row"><span class="maint-stat-label">Actual projected maint (their CPM)</span><span class="maint-stat-val dark">$428,504</span></div>
+      <div class="maint-stat-row total-row"><span class="maint-stat-label" style="font-weight:700;color:var(--dark)">Excess vs Fleet Average</span><span class="maint-stat-val red">$166,131</span></div>
+    </div>
+    <div style="background:var(--bg3)"></div>
+    <div class="maint-block t28">
+      <div class="maint-eyebrow orange">2028 Group · 24-Month Deferral Window</div>
+      <div class="maint-block-title">19 Assets · 24 Months</div>
+      <div class="maint-stat-row"><span class="maint-stat-label">Fleet median CPM benchmark</span><span class="maint-stat-val dark">$0.3753/mi</span></div>
+      <div class="maint-stat-row"><span class="maint-stat-label">Projected maint at fleet avg CPM</span><span class="maint-stat-val green">$478,222</span></div>
+      <div class="maint-stat-row"><span class="maint-stat-label">Actual projected maint (their CPM)</span><span class="maint-stat-val dark">$523,164</span></div>
+      <div class="maint-stat-row total-row"><span class="maint-stat-label" style="font-weight:700;color:var(--dark)">Excess vs Fleet Average</span><span class="maint-stat-val red">$44,942</span></div>
+    </div>
+  </div>
+
+  <div class="maint-combined">
+    <div class="maint-combined-cell">
+      <div class="maint-combined-label">Total Projected Maint (All 43 Assets)</div>
+      <div class="maint-combined-val">$951,668</div>
+      <div class="maint-combined-sub">If all deferred — actual CPM × actual MPM</div>
+    </div>
+    <div class="maint-combined-cell">
+      <div class="maint-combined-label">What Fleet-Avg Trucks Would Cost</div>
+      <div class="maint-combined-val">$740,595</div>
+      <div class="maint-combined-sub">Same miles at $0.3753/mi median CPM</div>
+    </div>
+    <div class="maint-combined-cell hl">
+      <div class="maint-combined-label">Excess Maintenance Over Fleet Avg</div>
+      <div class="maint-combined-val">$211,072</div>
+      <div class="maint-combined-sub">Added cost of running overaged assets</div>
+    </div>
+  </div>
+
+  <div class="c-section">
+    <div class="c-section-title">2027 Group — Per Asset Projection (12 Months)</div>
+    <div class="c-section-sub">Sorted by excess maintenance cost vs fleet average — highest burden assets at top</div>
+    <table style="width:100%;border-collapse:collapse;font-size:13px;">
+      <thead><tr style="background:var(--bg2);border-bottom:2px solid var(--border);">
+        <th style="font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);padding:10px 12px;text-align:left;">Store</th>
+        <th style="font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);padding:10px 12px;text-align:left;">Asset</th>
+        <th style="font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);padding:10px 12px;text-align:left;">Body Type</th>
+        <th style="font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);padding:10px 12px;text-align:left;">Make</th>
+        <th style="font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);padding:10px 12px;text-align:right;">CPM</th>
+        <th style="font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);padding:10px 12px;text-align:right;">Mi/Mo</th>
+        <th style="font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);padding:10px 12px;text-align:right;">Proj. Miles</th>
+        <th style="font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);padding:10px 12px;text-align:right;">Proj. Maint</th>
+        <th style="font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--red);padding:10px 12px;text-align:right;">Excess vs Avg</th>
+      </tr></thead>
+      <tbody id="tg-t1-body"></tbody>
+    </table>
+  </div>
+
+  <div class="c-section">
+    <div class="c-section-title">2028 Group — Per Asset Projection (24 Months)</div>
+    <div class="c-section-sub">Sorted by excess maintenance cost vs fleet average — highest burden assets at top</div>
+    <table style="width:100%;border-collapse:collapse;font-size:13px;">
+      <thead><tr style="background:var(--bg2);border-bottom:2px solid var(--border);">
+        <th style="font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);padding:10px 12px;text-align:left;">Store</th>
+        <th style="font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);padding:10px 12px;text-align:left;">Asset</th>
+        <th style="font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);padding:10px 12px;text-align:left;">Body Type</th>
+        <th style="font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);padding:10px 12px;text-align:left;">Make</th>
+        <th style="font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);padding:10px 12px;text-align:right;">CPM</th>
+        <th style="font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);padding:10px 12px;text-align:right;">Mi/Mo</th>
+        <th style="font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);padding:10px 12px;text-align:right;">Proj. Miles</th>
+        <th style="font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);padding:10px 12px;text-align:right;">Proj. Maint</th>
+        <th style="font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--red);padding:10px 12px;text-align:right;">Excess vs Avg</th>
+      </tr></thead>
+      <tbody id="tg-t2-body"></tbody>
+    </table>
+  </div>
+
+</div>
+</div>
+</body>
 <script>
 const CPM_75=0.552, CPM_90=0.787, FLEET_MEAN=2.006;
 const existingData=[{"group": "2027", "is_new": false, "score": 100, "both_past": true, "financial_add": false, "store": "39", "asset": "748048", "type": "Tractor TA", "make": "International", "age_mo": 122.0, "current_miles": "303,500", "lc_miles": "250,000", "mi_lc": "21.5 mo PAST", "mi_past": true, "mi_budget": 2024, "age_lc": "26.0 mo PAST", "age_past": true, "age_budget": 2024, "cpm": "$0.908", "cpm_val": 0.9077, "cpm_high": true, "cpm_very_high": true, "util_asset": "31.8%", "is_slide": false, "price": 150000}, {"group": "2027", "is_new": false, "score": 88, "both_past": true, "financial_add": false, "store": "39", "asset": "748026", "type": "Tractor TA", "make": "International", "age_mo": 120.5, "current_miles": "316,066", "lc_miles": "250,000", "mi_lc": "25.2 mo PAST", "mi_past": true, "mi_budget": 2024, "age_lc": "24.5 mo PAST", "age_past": true, "age_budget": 2024, "cpm": "$0.773", "cpm_val": 0.7729, "cpm_high": true, "cpm_very_high": false, "util_asset": "31.9%", "is_slide": false, "price": 150000}, {"group": "2027", "is_new": false, "score": 88, "both_past": true, "financial_add": false, "store": "112", "asset": "749004", "type": "Tractor TA", "make": "Kenworth", "age_mo": 107.9, "current_miles": "255,963", "lc_miles": "250,000", "mi_lc": "2.5 mo PAST", "mi_past": true, "mi_budget": 2026, "age_lc": "11.9 mo PAST", "age_past": true, "age_budget": 2025, "cpm": "$0.658", "cpm_val": 0.6584, "cpm_high": true, "cpm_very_high": false, "util_asset": "24.0%", "is_slide": false, "price": 150000}, {"group": "2027", "is_new": false, "score": 88, "both_past": true, "financial_add": false, "store": "67", "asset": "750030", "type": "Tractor TA", "make": "International", "age_mo": 97.7, "current_miles": "283,890", "lc_miles": "250,000", "mi_lc": "11.7 mo PAST", "mi_past": true, "mi_budget": 2025, "age_lc": "1.7 mo PAST", "age_past": true, "age_budget": 2026, "cpm": "$0.581", "cpm_val": 0.5811, "cpm_high": true, "cpm_very_high": false, "util_asset": "36.6%", "is_slide": false, "price": 150000}, {"group": "2027", "is_new": false, "score": 83, "both_past": false, "financial_add": false, "store": "113", "asset": "750018", "type": "Tractor TA", "make": "International", "age_mo": 98.1, "current_miles": "242,545", "lc_miles": "250,000", "mi_lc": "3.0 mo out", "mi_past": false, "mi_budget": 2026, "age_lc": "2.1 mo PAST", "age_past": true, "age_budget": 2026, "cpm": "$0.623", "cpm_val": 0.6233, "cpm_high": true, "cpm_very_high": false, "util_asset": "24.6%", "is_slide": false, "price": 150000}, {"group": "2027", "is_new": false, "score": 83, "both_past": false, "financial_add": false, "store": "762", "asset": "748022", "type": "Tractor TA", "make": "International", "age_mo": 120.1, "current_miles": "249,940", "lc_miles": "250,000", "mi_lc": "0.0 mo out", "mi_past": false, "mi_budget": 2026, "age_lc": "24.1 mo PAST", "age_past": true, "age_budget": 2024, "cpm": "$0.591", "cpm_val": 0.5915, "cpm_high": true, "cpm_very_high": false, "util_asset": "N/A", "is_slide": false, "price": 150000}, {"group": "2027", "is_new": false, "score": 83, "both_past": false, "financial_add": false, "store": "57", "asset": "748010", "type": "24' TA Flatbed", "make": "International", "age_mo": 118.4, "current_miles": "242,046", "lc_miles": "250,000", "mi_lc": "3.9 mo out", "mi_past": false, "mi_budget": 2026, "age_lc": "22.4 mo PAST", "age_past": true, "age_budget": 2024, "cpm": "$0.559", "cpm_val": 0.5593, "cpm_high": true, "cpm_very_high": false, "util_asset": "42.2%", "is_slide": false, "price": 160000}, {"group": "2027", "is_new": false, "score": 76, "both_past": false, "financial_add": false, "store": "60", "asset": "749005", "type": "Tractor TA", "make": "Kenworth", "age_mo": 107.7, "current_miles": "230,986", "lc_miles": "250,000", "mi_lc": "8.9 mo out", "mi_past": false, "mi_budget": 2026, "age_lc": "11.7 mo PAST", "age_past": true, "age_budget": 2025, "cpm": "$0.690", "cpm_val": 0.6898, "cpm_high": true, "cpm_very_high": false, "util_asset": "40.3%", "is_slide": false, "price": 150000}, {"group": "2027", "is_new": false, "score": 76, "both_past": false, "financial_add": false, "store": "55", "asset": "749019", "type": "Tractor TA", "make": "International", "age_mo": 102.4, "current_miles": "226,492", "lc_miles": "250,000", "mi_lc": "10.6 mo out", "mi_past": false, "mi_budget": 2027, "age_lc": "6.4 mo PAST", "age_past": true, "age_budget": 2025, "cpm": "$0.642", "cpm_val": 0.6424, "cpm_high": true, "cpm_very_high": false, "util_asset": "28.4%", "is_slide": false, "price": 150000}, {"group": "2027", "is_new": false, "score": 75, "both_past": false, "financial_add": false, "store": "34", "asset": "750042", "type": "24' TA Flatbed", "make": "International", "age_mo": 87.6, "current_miles": "234,162", "lc_miles": "250,000", "mi_lc": "5.9 mo out", "mi_past": false, "mi_budget": 2026, "age_lc": "8.4 mo out", "age_past": false, "age_budget": 2026, "cpm": "$0.567", "cpm_val": 0.5673, "cpm_high": true, "cpm_very_high": false, "util_asset": "34.5%", "is_slide": false, "price": 160000}, {"group": "2027", "is_new": false, "score": 73, "both_past": false, "financial_add": false, "store": "18", "asset": "747003", "type": "Tractor TA", "make": "International", "age_mo": 122.1, "current_miles": "227,130", "lc_miles": "250,000", "mi_lc": "12.3 mo out", "mi_past": false, "mi_budget": 2027, "age_lc": "26.1 mo PAST", "age_past": true, "age_budget": 2024, "cpm": "$0.811", "cpm_val": 0.8106, "cpm_high": true, "cpm_very_high": true, "util_asset": "19.9%", "is_slide": false, "price": 150000}, {"group": "2027", "is_new": false, "score": 73, "both_past": false, "financial_add": false, "store": "355CD", "asset": "750027", "type": "24' TA Flatbed", "make": "Kenworth", "age_mo": 94.3, "current_miles": "233,116", "lc_miles": "250,000", "mi_lc": "6.8 mo out", "mi_past": false, "mi_budget": 2026, "age_lc": "1.7 mo out", "age_past": false, "age_budget": 2026, "cpm": "$0.666", "cpm_val": 0.666, "cpm_high": true, "cpm_very_high": false, "util_asset": "31.3%", "is_slide": false, "price": 160000}, {"group": "2027", "is_new": false, "score": 67, "both_past": false, "financial_add": false, "store": "761", "asset": "750024", "type": "24' TA Flatbed", "make": "Kenworth", "age_mo": 93.9, "current_miles": "250,030", "lc_miles": "250,000", "mi_lc": "0.0 mo PAST", "mi_past": true, "mi_budget": 2026, "age_lc": "2.1 mo out", "age_past": false, "age_budget": 2026, "cpm": "$0.434", "cpm_val": 0.4343, "cpm_high": false, "cpm_very_high": false, "util_asset": "N/A", "is_slide": false, "price": 160000}, {"group": "2027", "is_new": false, "score": 66, "both_past": false, "financial_add": false, "store": "98", "asset": "748021", "type": "Tractor TA", "make": "International", "age_mo": 120.3, "current_miles": "222,711", "lc_miles": "250,000", "mi_lc": "14.7 mo out", "mi_past": false, "mi_budget": 2027, "age_lc": "24.3 mo PAST", "age_past": true, "age_budget": 2024, "cpm": "$0.617", "cpm_val": 0.6173, "cpm_high": true, "cpm_very_high": false, "util_asset": "33.0%", "is_slide": false, "price": 150000}, {"group": "2027", "is_new": false, "score": 65, "both_past": false, "financial_add": false, "store": "735", "asset": "750002", "type": "24' TA Flatbed", "make": "International", "age_mo": 96.7, "current_miles": "237,596", "lc_miles": "250,000", "mi_lc": "5.1 mo out", "mi_past": false, "mi_budget": 2026, "age_lc": "0.7 mo PAST", "age_past": true, "age_budget": 2026, "cpm": "$0.548", "cpm_val": 0.5483, "cpm_high": false, "cpm_very_high": false, "util_asset": "38.1%", "is_slide": false, "price": 160000}, {"group": "2027", "is_new": false, "score": 64, "both_past": false, "financial_add": false, "store": "86", "asset": "751003", "type": "24' TA Flatbed", "make": "International", "age_mo": 78.8, "current_miles": "228,780", "lc_miles": "250,000", "mi_lc": "7.3 mo out", "mi_past": false, "mi_budget": 2026, "age_lc": "17.2 mo out", "age_past": false, "age_budget": 2027, "cpm": "$0.594", "cpm_val": 0.5942, "cpm_high": true, "cpm_very_high": false, "util_asset": "32.0%", "is_slide": false, "price": 160000}, {"group": "2027", "is_new": false, "score": 62, "both_past": false, "financial_add": false, "store": "111", "asset": "750040", "type": "24' TA Flatbed", "make": "International", "age_mo": 87.1, "current_miles": "251,376", "lc_miles": "250,000", "mi_lc": "0.5 mo PAST", "mi_past": true, "mi_budget": 2026, "age_lc": "8.9 mo out", "age_past": false, "age_budget": 2026, "cpm": "$0.458", "cpm_val": 0.4581, "cpm_high": false, "cpm_very_high": false, "util_asset": "34.4%", "is_slide": false, "price": 160000}, {"group": "2027", "is_new": false, "score": 60, "both_past": false, "financial_add": false, "store": "10", "asset": "750047", "type": "24' TA Flatbed", "make": "Kenworth", "age_mo": 86.9, "current_miles": "199,281", "lc_miles": "250,000", "mi_lc": "22.1 mo out", "mi_past": false, "mi_budget": 2028, "age_lc": "9.1 mo out", "age_past": false, "age_budget": 2026, "cpm": "$0.933", "cpm_val": 0.9333, "cpm_high": true, "cpm_very_high": true, "util_asset": "29.7%", "is_slide": false, "price": 160000}, {"group": "2027", "is_new": false, "score": 60, "both_past": false, "financial_add": false, "store": "355CD", "asset": "750049", "type": "24' TA Flatbed", "make": "Kenworth", "age_mo": 85.6, "current_miles": "203,291", "lc_miles": "250,000", "mi_lc": "19.7 mo out", "mi_past": false, "mi_budget": 2027, "age_lc": "10.4 mo out", "age_past": false, "age_budget": 2027, "cpm": "$0.920", "cpm_val": 0.9196, "cpm_high": true, "cpm_very_high": true, "util_asset": "34.2%", "is_slide": false, "price": 160000}, {"group": "2027", "is_new": false, "score": 58, "both_past": false, "financial_add": true, "store": "111", "asset": "693016", "type": "20' Slide Flatbed", "make": "Hino", "age_mo": 105.1, "current_miles": "227,691", "lc_miles": "250,000", "mi_lc": "10.3 mo out", "mi_past": false, "mi_budget": 2027, "age_lc": "9.1 mo PAST", "age_past": true, "age_budget": 2025, "cpm": "$0.426", "cpm_val": 0.4255, "cpm_high": false, "cpm_very_high": false, "util_asset": "30.4%", "is_slide": true, "price": 71500}, {"group": "2027", "is_new": false, "score": 45, "both_past": false, "financial_add": true, "store": "115", "asset": "694020", "type": "20' Slide Flatbed", "make": "Hino", "age_mo": 87.6, "current_miles": "228,520", "lc_miles": "250,000", "mi_lc": "8.2 mo out", "mi_past": false, "mi_budget": 2026, "age_lc": "8.4 mo out", "age_past": false, "age_budget": 2026, "cpm": "$0.323", "cpm_val": 0.3233, "cpm_high": false, "cpm_very_high": false, "util_asset": "17.8%", "is_slide": true, "price": 71500}, {"group": "2027", "is_new": false, "score": 40, "both_past": false, "financial_add": true, "store": "8", "asset": "694021", "type": "20' Slide Flatbed", "make": "Hino", "age_mo": 87.3, "current_miles": "215,974", "lc_miles": "250,000", "mi_lc": "13.8 mo out", "mi_past": false, "mi_budget": 2027, "age_lc": "8.7 mo out", "age_past": false, "age_budget": 2026, "cpm": "$0.264", "cpm_val": 0.2637, "cpm_high": false, "cpm_very_high": false, "util_asset": "33.6%", "is_slide": true, "price": 71500}, {"group": "2027", "is_new": false, "score": 38, "both_past": false, "financial_add": true, "store": "49", "asset": "692011", "type": "20' Slide Flatbed", "make": "Hino", "age_mo": 118.4, "current_miles": "149,723", "lc_miles": "250,000", "mi_lc": "79.3 mo out", "mi_past": false, "mi_budget": 2032, "age_lc": "22.4 mo PAST", "age_past": true, "age_budget": 2024, "cpm": "$0.775", "cpm_val": 0.7751, "cpm_high": true, "cpm_very_high": false, "util_asset": "23.6%", "is_slide": true, "price": 71500}, {"group": "2027", "is_new": false, "score": 38, "both_past": false, "financial_add": true, "store": "41", "asset": "692009", "type": "20' Slide Flatbed", "make": "Hino", "age_mo": 118.9, "current_miles": "117,441", "lc_miles": "250,000", "mi_lc": "134.2 mo out", "mi_past": false, "mi_budget": 2037, "age_lc": "22.9 mo PAST", "age_past": true, "age_budget": 2024, "cpm": "$0.727", "cpm_val": 0.727, "cpm_high": true, "cpm_very_high": false, "util_asset": "23.8%", "is_slide": true, "price": 71500}];
@@ -514,10 +882,38 @@ function buildMfr() {
   }).join('');
 }
 
+
+const maintT1 = [{"store": "10", "asset": "750047", "type": "24' TA Flatbed", "make": "Kenworth", "cpm": 0.9333, "mpm": 2294.4, "months": 12, "projected_miles": 27533.0, "projected_maint": 25695.9, "fleet_avg_maint": 10332.68, "excess_vs_avg": 15363.22}, {"store": "18", "asset": "747003", "type": "Tractor TA", "make": "International", "cpm": 0.8106, "mpm": 1861.0, "months": 12, "projected_miles": 22331.0, "projected_maint": 18100.93, "fleet_avg_maint": 8380.64, "excess_vs_avg": 9720.29}, {"store": "34", "asset": "750042", "type": "24' TA Flatbed", "make": "International", "cpm": 0.5673, "mpm": 2672.7, "months": 12, "projected_miles": 32073.0, "projected_maint": 18195.96, "fleet_avg_maint": 12036.51, "excess_vs_avg": 6159.46}, {"store": "39", "asset": "748048", "type": "Tractor TA", "make": "International", "cpm": 0.9077, "mpm": 2488.7, "months": 12, "projected_miles": 29864.0, "projected_maint": 27106.41, "fleet_avg_maint": 11207.58, "excess_vs_avg": 15898.83}, {"store": "39", "asset": "748026", "type": "Tractor TA", "make": "International", "cpm": 0.7729, "mpm": 2622.1, "months": 12, "projected_miles": 31465.0, "projected_maint": 24319.2, "fleet_avg_maint": 11808.46, "excess_vs_avg": 12510.74}, {"store": "55", "asset": "749019", "type": "Tractor TA", "make": "International", "cpm": 0.6424, "mpm": 2211.9, "months": 12, "projected_miles": 26542.0, "projected_maint": 17049.62, "fleet_avg_maint": 9960.93, "excess_vs_avg": 7088.69}, {"store": "57", "asset": "748010", "type": "24' TA Flatbed", "make": "International", "cpm": 0.5593, "mpm": 2044.3, "months": 12, "projected_miles": 24531.0, "projected_maint": 13719.08, "fleet_avg_maint": 9206.16, "excess_vs_avg": 4512.92}, {"store": "60", "asset": "749005", "type": "Tractor TA", "make": "Kenworth", "cpm": 0.6898, "mpm": 2145.6, "months": 12, "projected_miles": 25747.0, "projected_maint": 17759.06, "fleet_avg_maint": 9662.43, "excess_vs_avg": 8096.64}, {"store": "61", "asset": "751009", "type": "24' TA Flatbed", "make": "Kenworth", "cpm": 0.5203, "mpm": 2979.7, "months": 12, "projected_miles": 35756.0, "projected_maint": 18605.51, "fleet_avg_maint": 13418.82, "excess_vs_avg": 5186.69}, {"store": "67", "asset": "750030", "type": "Tractor TA", "make": "International", "cpm": 0.5811, "mpm": 2905.7, "months": 12, "projected_miles": 34869.0, "projected_maint": 20261.48, "fleet_avg_maint": 13085.77, "excess_vs_avg": 7175.71}, {"store": "86", "asset": "751003", "type": "24' TA Flatbed", "make": "International", "cpm": 0.5942, "mpm": 2903.2, "months": 12, "projected_miles": 34838.0, "projected_maint": 20700.41, "fleet_avg_maint": 13074.12, "excess_vs_avg": 7626.29}, {"store": "98", "asset": "748021", "type": "Tractor TA", "make": "International", "cpm": 0.6173, "mpm": 1851.2, "months": 12, "projected_miles": 22214.0, "projected_maint": 13713.59, "fleet_avg_maint": 8336.53, "excess_vs_avg": 5377.06}, {"store": "111", "asset": "750040", "type": "24' TA Flatbed", "make": "International", "cpm": 0.4581, "mpm": 2886.5, "months": 12, "projected_miles": 34639.0, "projected_maint": 15869.25, "fleet_avg_maint": 12999.34, "excess_vs_avg": 2869.91}, {"store": "112", "asset": "749004", "type": "Tractor TA", "make": "Kenworth", "cpm": 0.6584, "mpm": 2373.2, "months": 12, "projected_miles": 28479.0, "projected_maint": 18749.43, "fleet_avg_maint": 10687.65, "excess_vs_avg": 8061.78}, {"store": "113", "asset": "750018", "type": "Tractor TA", "make": "International", "cpm": 0.6233, "mpm": 2471.7, "months": 12, "projected_miles": 29661.0, "projected_maint": 18488.17, "fleet_avg_maint": 11131.3, "excess_vs_avg": 7356.87}, {"store": "735", "asset": "750002", "type": "24' TA Flatbed", "make": "International", "cpm": 0.5483, "mpm": 2455.9, "months": 12, "projected_miles": 29470.0, "projected_maint": 16158.76, "fleet_avg_maint": 11059.75, "excess_vs_avg": 5099.01}, {"store": "761", "asset": "750024", "type": "24' TA Flatbed", "make": "Kenworth", "cpm": 0.4343, "mpm": 2664.0, "months": 12, "projected_miles": 31968.0, "projected_maint": 13882.93, "fleet_avg_maint": 11997.15, "excess_vs_avg": 1885.78}, {"store": "762", "asset": "748022", "type": "Tractor TA", "make": "International", "cpm": 0.5915, "mpm": 2080.9, "months": 12, "projected_miles": 24971.0, "projected_maint": 14770.19, "fleet_avg_maint": 9371.14, "excess_vs_avg": 5399.04}, {"store": "355CD", "asset": "750027", "type": "24' TA Flatbed", "make": "Kenworth", "cpm": 0.666, "mpm": 2472.5, "months": 12, "projected_miles": 29670.0, "projected_maint": 19761.09, "fleet_avg_maint": 11134.86, "excess_vs_avg": 8626.22}, {"store": "355CD", "asset": "750049", "type": "24' TA Flatbed", "make": "Kenworth", "cpm": 0.9196, "mpm": 2374.7, "months": 12, "projected_miles": 28497.0, "projected_maint": 26204.68, "fleet_avg_maint": 10694.38, "excess_vs_avg": 15510.31}, {"store": "111", "asset": "693016", "type": "20' Slide Flatbed", "make": "Hino", "cpm": 0.4255, "mpm": 2166.6, "months": 12, "projected_miles": 25999.0, "projected_maint": 11062.82, "fleet_avg_maint": 9756.88, "excess_vs_avg": 1305.94}, {"store": "115", "asset": "694020", "type": "20' Slide Flatbed", "make": "Hino", "cpm": 0.3233, "mpm": 2608.3, "months": 12, "projected_miles": 31300.0, "projected_maint": 10120.39, "fleet_avg_maint": 11746.48, "excess_vs_avg": -1626.09}, {"store": "8", "asset": "694021", "type": "20' Slide Flatbed", "make": "Hino", "cpm": 0.2637, "mpm": 2473.5, "months": 12, "projected_miles": 29682.0, "projected_maint": 7827.56, "fleet_avg_maint": 11139.2, "excess_vs_avg": -3311.64}, {"store": "49", "asset": "692011", "type": "20' Slide Flatbed", "make": "Hino", "cpm": 0.7751, "mpm": 1264.9, "months": 12, "projected_miles": 15178.0, "projected_maint": 11764.72, "fleet_avg_maint": 5696.25, "excess_vs_avg": 6068.47}, {"store": "41", "asset": "692009", "type": "20' Slide Flatbed", "make": "Hino", "cpm": 0.727, "mpm": 987.8, "months": 12, "projected_miles": 11853.0, "projected_maint": 8616.76, "fleet_avg_maint": 4448.33, "excess_vs_avg": 4168.44}];
+const maintT2 = [{"store": "1", "asset": "750032", "type": "24' TA Flatbed", "make": "Kenworth", "cpm": 0.7735, "mpm": 2109.7, "months": 24, "projected_miles": 50632.0, "projected_maint": 39161.81, "fleet_avg_maint": 19001.41, "excess_vs_avg": 20160.4}, {"store": "16", "asset": "696003", "type": "20' Slide Flatbed", "make": "International", "cpm": 0.4478, "mpm": 2822.7, "months": 24, "projected_miles": 67744.0, "projected_maint": 30332.9, "fleet_avg_maint": 25423.36, "excess_vs_avg": 4909.54}, {"store": "29", "asset": "697007", "type": "20' Slide Flatbed", "make": "International", "cpm": 0.2362, "mpm": 2844.1, "months": 24, "projected_miles": 68259.0, "projected_maint": 16125.72, "fleet_avg_maint": 25616.38, "excess_vs_avg": -9490.66}, {"store": "34", "asset": "748057", "type": "Tractor TA", "make": "International", "cpm": 0.6119, "mpm": 1703.7, "months": 24, "projected_miles": 40889.0, "projected_maint": 25018.24, "fleet_avg_maint": 15345.05, "excess_vs_avg": 9673.19}, {"store": "34", "asset": "697008", "type": "20' Slide Flatbed", "make": "International", "cpm": 0.2297, "mpm": 3024.6, "months": 24, "projected_miles": 72590.0, "projected_maint": 16673.93, "fleet_avg_maint": 27241.82, "excess_vs_avg": -10567.89}, {"store": "36", "asset": "753022", "type": "24' TA Flatbed", "make": "Kenworth", "cpm": 0.3883, "mpm": 2910.9, "months": 24, "projected_miles": 69862.0, "projected_maint": 27129.45, "fleet_avg_maint": 26218.22, "excess_vs_avg": 911.22}, {"store": "47", "asset": "753025", "type": "24' TA Flatbed", "make": "International", "cpm": 0.2434, "mpm": 3042.6, "months": 24, "projected_miles": 73023.0, "projected_maint": 17771.57, "fleet_avg_maint": 27404.51, "excess_vs_avg": -9632.94}, {"store": "53", "asset": "697021", "type": "20' Slide Flatbed", "make": "International", "cpm": 0.1716, "mpm": 3829.9, "months": 24, "projected_miles": 91917.0, "projected_maint": 15775.62, "fleet_avg_maint": 34495.04, "excess_vs_avg": -18719.42}, {"store": "61", "asset": "753026", "type": "24' TA Flatbed", "make": "Kenworth", "cpm": 0.5488, "mpm": 3290.2, "months": 24, "projected_miles": 78965.0, "projected_maint": 43338.95, "fleet_avg_maint": 29634.3, "excess_vs_avg": 13704.66}, {"store": "66", "asset": "752008", "type": "24' TA Flatbed", "make": "International", "cpm": 0.5478, "mpm": 2606.4, "months": 24, "projected_miles": 62553.0, "projected_maint": 34269.71, "fleet_avg_maint": 23475.38, "excess_vs_avg": 10794.33}, {"store": "67", "asset": "753036", "type": "Tractor TA", "make": "International", "cpm": 0.4668, "mpm": 3252.8, "months": 24, "projected_miles": 78068.0, "projected_maint": 36439.63, "fleet_avg_maint": 29297.8, "excess_vs_avg": 7141.83}, {"store": "74", "asset": "751004", "type": "24' TA Flatbed", "make": "International", "cpm": 0.5657, "mpm": 2357.5, "months": 24, "projected_miles": 56581.0, "projected_maint": 32009.33, "fleet_avg_maint": 21233.83, "excess_vs_avg": 10775.5}, {"store": "74", "asset": "697013", "type": "20' Slide Flatbed", "make": "International", "cpm": 0.3372, "mpm": 2884.8, "months": 24, "projected_miles": 69236.0, "projected_maint": 23348.05, "fleet_avg_maint": 25983.21, "excess_vs_avg": -2635.16}, {"store": "111", "asset": "753021", "type": "24' TA Flatbed", "make": "Kenworth", "cpm": 0.3012, "mpm": 3204.4, "months": 24, "projected_miles": 76905.0, "projected_maint": 23160.19, "fleet_avg_maint": 28861.13, "excess_vs_avg": -5700.94}, {"store": "112", "asset": "752012", "type": "24' TA Flatbed", "make": "Kenworth", "cpm": 0.3639, "mpm": 2722.1, "months": 24, "projected_miles": 65331.0, "projected_maint": 23776.69, "fleet_avg_maint": 24517.79, "excess_vs_avg": -741.11}, {"store": "115", "asset": "750033", "type": "Tractor TA", "make": "International", "cpm": 0.7918, "mpm": 2202.1, "months": 24, "projected_miles": 52850.0, "projected_maint": 41844.56, "fleet_avg_maint": 19833.86, "excess_vs_avg": 22010.71}, {"store": "116", "asset": "751018", "type": "Tractor TA", "make": "International", "cpm": 0.3868, "mpm": 2243.1, "months": 24, "projected_miles": 53833.0, "projected_maint": 20822.7, "fleet_avg_maint": 20202.85, "excess_vs_avg": 619.86}, {"store": "117", "asset": "753018", "type": "24' TA Flatbed", "make": "Kenworth", "cpm": 0.4521, "mpm": 2994.5, "months": 24, "projected_miles": 71868.0, "projected_maint": 32489.31, "fleet_avg_maint": 26970.97, "excess_vs_avg": 5518.34}, {"store": "119", "asset": "753016", "type": "24' TA Flatbed", "make": "International", "cpm": 0.3235, "mpm": 3049.4, "months": 24, "projected_miles": 73185.0, "projected_maint": 23675.36, "fleet_avg_maint": 27465.05, "excess_vs_avg": -3789.69}];
+const FLEET_CPM_MED = 0.3753;
+
+function fmt$(v) { return '$' + Math.round(v).toLocaleString(); }
+
+function buildMaintTable(data, bodyId) {
+  const sorted = [...data].sort((a,b) => b.excess_vs_avg - a.excess_vs_avg);
+  document.getElementById(bodyId).innerHTML = sorted.map(r => {
+    const excessColor = r.excess_vs_avg > 10000 ? 'var(--red)' : r.excess_vs_avg > 5000 ? 'var(--orange)' : 'var(--dark)';
+    const cpmColor    = r.cpm > 0.787 ? 'var(--red)' : r.cpm > 0.552 ? 'var(--orange)' : 'var(--dark)';
+    return `<tr style="border-bottom:1px solid rgba(0,0,0,0.05)">
+      <td style="padding:10px 12px"><strong>${r.store}</strong></td>
+      <td style="padding:10px 12px">${r.asset}</td>
+      <td style="padding:10px 12px;font-size:12px;color:var(--mid)">${r.type}</td>
+      <td style="padding:10px 12px;color:var(--mid)">${r.make}</td>
+      <td style="padding:10px 12px;text-align:right;font-family:'Barlow Condensed',sans-serif;font-size:15px;font-weight:700;color:${cpmColor}">${r.cpm.toFixed(3)}/mi</td>
+      <td style="padding:10px 12px;text-align:right;color:var(--mid)">${r.mpm.toLocaleString()}</td>
+      <td style="padding:10px 12px;text-align:right;color:var(--mid)">${Math.round(r.projected_miles).toLocaleString()}</td>
+      <td style="padding:10px 12px;text-align:right;font-family:'Barlow Condensed',sans-serif;font-size:15px;font-weight:600">${fmt$(r.projected_maint)}</td>
+      <td style="padding:10px 12px;text-align:right;font-family:'Barlow Condensed',sans-serif;font-size:16px;font-weight:800;color:${excessColor}">${fmt$(r.excess_vs_avg)}</td>
+    </tr>`;
+  }).join('');
+}
+
+buildMaintTable(maintT1, "tg-t1-body");
+buildMaintTable(maintT2, "tg-t2-body");
+
 buildTable(existingData, 'ta-body', 'ta-count', false);
 buildTable(newData,      'tb-body', 'tb-count', true);
 buildTable(allData,      'tc-body', 'tc-count', false);
 buildMfr();
 </script>
-</body>
 </html>
