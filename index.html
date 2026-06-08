@@ -342,7 +342,7 @@
               <div style="font-size:12px;font-weight:700;color:var(--green2);">Total 2027 Savings + Maint Avoided</div>
               <div style="font-size:11px;color:var(--muted);margin-top:2px;">Price/emission savings + excess maintenance avoided</div>
             </div>
-            <div style="font-family:'Barlow Condensed',sans-serif;font-size:26px;font-weight:800;color:var(--green2);">$715,933</div>
+            <div style="font-family:'Barlow Condensed',sans-serif;font-size:26px;font-weight:800;color:var(--green2);">$706,796</div>
           </div>
         </div>
       </div>
@@ -397,9 +397,9 @@
     <div style="padding:18px 24px;background:var(--green-lt);border-top:2px solid rgba(45,122,45,0.2);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;">
       <div>
         <div style="font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--green2);">Combined Total — Price, Emission &amp; Maintenance Savings</div>
-        <div style="font-size:12px;color:var(--muted);margin-top:3px;">$476,000 + $498,000 price/emission + $239,933 + $311,067 maintenance excess avoided vs. prime-age benchmark</div>
+        <div style="font-size:12px;color:var(--muted);margin-top:3px;">$476,000 + $498,000 price/emission + $230,796 + $311,067 maintenance excess avoided vs. prime-age benchmark</div>
       </div>
-      <div style="font-family:'Barlow Condensed',sans-serif;font-size:36px;font-weight:800;color:var(--green2);">$1,525,000</div>
+      <div style="font-family:'Barlow Condensed',sans-serif;font-size:36px;font-weight:800;color:var(--green2);">$1,515,863</div>
     </div>
 
   </div>
@@ -420,8 +420,8 @@
       </div>
       <div style="padding:18px 16px;text-align:center;border-right:1px solid var(--border);">
         <div style="font-size:9px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:5px;">2027 Proceeds (19 units)</div>
-        <div style="font-family:'Barlow Condensed',sans-serif;font-size:26px;font-weight:800;color:var(--teal);">$460,000</div>
-        <div style="font-size:10px;color:var(--muted);margin-top:3px;">23 × $20,000</div>
+        <div style="font-family:'Barlow Condensed',sans-serif;font-size:26px;font-weight:800;color:var(--teal);">$380,000</div>
+        <div style="font-size:10px;color:var(--muted);margin-top:3px;">19 × $20,000</div>
       </div>
       <div style="padding:18px 16px;text-align:center;border-right:1px solid var(--border);background:var(--green-lt);">
         <div style="font-size:9px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:5px;">2027 Net After Disposition</div>
@@ -467,12 +467,15 @@
 <div class="tab-panel active" id="tab-ta">
   <div class="tbl-wrap">
     <div class="tbl-header">
-      <span class="tbl-badge green">2027 + Slides</span>
+      <span class="tbl-badge green">2027 Replacements</span>
       <div>
         <div class="tbl-title">Current Recommendation — Through 2027</div>
         <div class="tbl-desc">19 assets selected using CPM 70% / Age 30% weighted scoring within each body type cohort — 4 Hino Slides, 10 Tractor TAs, and 5 24′ TA Flatbeds. Store 41 / Asset 748026 protected per operational requirement.</div>
       </div>
-      <div style="text-align:right"><div class="tbl-count green" id="ta-count"></div><div class="tbl-count-label">Assets</div></div>
+      <div style="text-align:right;display:flex;flex-direction:column;align-items:flex-end;gap:8px;">
+        <div><div class="tbl-count green" id="ta-count"></div><div class="tbl-count-label">Assets</div></div>
+        <button onclick="downloadCSV()" style="font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;background:var(--green);color:#fff;border:none;border-radius:4px;padding:7px 14px;cursor:pointer;display:flex;align-items:center;gap:6px;">⬇ Download CSV</button>
+      </div>
     </div>
     <table><thead><tr>
       <th>Score</th><th>Store</th><th>Asset</th><th>Body Type</th><th>Make</th>
@@ -492,7 +495,10 @@
         <div class="tbl-title">2028 Pipeline — Mileage LC Hits in 2028</div>
         <div class="tbl-desc">23 replacement assets — 19 originally hitting mileage lifecycle in 2028, plus 5 assets (1 Slide, 4 Flatbeds) moved from the 2027 list as best remaining candidates. These represent the next wave of required capital — if the emission upcharge applies in 2027, every one of these trucks will be purchased at a higher cost. Pulling them into the current cycle captures the same savings window.</div>
       </div>
-      <div style="text-align:right"><div class="tbl-count orange" id="tb-count"></div><div class="tbl-count-label">Assets</div></div>
+      <div style="text-align:right;display:flex;flex-direction:column;align-items:flex-end;gap:8px;">
+        <div><div class="tbl-count orange" id="tb-count"></div><div class="tbl-count-label">Assets</div></div>
+        <button onclick="downloadCSV2028()" style="font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;background:var(--orange);color:#fff;border:none;border-radius:4px;padding:7px 14px;cursor:pointer;display:flex;align-items:center;gap:6px;">⬇ Download CSV</button>
+      </div>
     </div>
     <table><thead><tr>
       <th>Score</th><th>Store</th><th>Asset</th><th>Body Type</th><th>Make</th>
@@ -655,7 +661,7 @@
       <div class="scenario-block now">
         <div class="scenario-eyebrow green">Buy Now (2026)</div>
         <div class="scenario-stitle">Revised Dealer Pricing</div>
-        <div class="scenario-row"><span class="scenario-row-label">Purchase Price (23 units)</span><span class="scenario-row-val dark">$2,586,000</span></div>
+        <div class="scenario-row"><span class="scenario-row-label">Purchase Price (19 units)</span><span class="scenario-row-val dark">$2,586,000</span></div>
         <div class="scenario-row"><span class="scenario-row-label">Negotiated Savings (all types)</span><span class="scenario-row-val green">− $476,000</span></div>
         <div class="scenario-row"><span class="scenario-row-label">Asset Disposition Proceeds</span><span class="scenario-row-val green">− $380,000</span></div>
         <div class="scenario-row total"><span class="scenario-row-label" style="font-weight:700;color:var(--dark)">Net Capital Outlay</span><span class="scenario-row-val green">$1,730,000</span></div>
@@ -974,6 +980,52 @@ function buildMaintTable(data, bodyId) {
       <td style="padding:10px 12px;text-align:right;font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:700;color:${primeColor}">${fmt(r.excess_vs_prime)}</td>
     </tr>`;
   }).join('');
+}
+
+function downloadCSV() {
+  const headers = [
+    'Store','Asset','Body Type','Make','Age (Mo)','Current Miles','LC Miles',
+    'Mileage LC','Mi Budget Yr','Age LC','Age Budget Yr',
+    'Maint Cost/Mile','W. Score','Unit Price','Price Reduction','Emission Saving','Total Savings','Excess Maint Avoided (12mo)'
+  ];
+  const rows = existingData.map(r => [
+    r.store, r.asset, r.type, r.make, r.age_mo, r.current_miles, r.lc_miles,
+    r.mi_lc, r.mi_budget, r.age_lc, r.age_budget,
+    r.cpm, r.w_score, '$'+r.price.toLocaleString(),
+    '$'+(r.price_reduction||0).toLocaleString(),
+    '$'+(r.emission_saving||0).toLocaleString(),
+    '$'+(r.total_savings||0).toLocaleString(),
+    '$'+Math.abs(r.excess_maint||0).toLocaleString()
+  ]);
+  const csv = [headers, ...rows].map(r => r.map(v => `"${v}"`).join(',')).join('\n');
+  const blob = new Blob([csv], {type:'text/csv'});
+  const url  = URL.createObjectURL(blob);
+  const a    = document.createElement('a');
+  a.href = url; a.download = 'McCoys_2027_Replacement_Recommendation.csv';
+  a.click(); URL.revokeObjectURL(url);
+}
+
+function downloadCSV2028() {
+  const headers = [
+    'Store','Asset','Body Type','Make','Age (Mo)','Current Miles','LC Miles',
+    'Mileage LC','Mi Budget Yr','Age LC','Age Budget Yr',
+    'Maint Cost/Mile','W. Score','Unit Price','Price Reduction','Emission Saving','Total Savings','Excess Maint Avoided (24mo)'
+  ];
+  const rows = newData.map(r => [
+    r.store, r.asset, r.type, r.make, r.age_mo, r.current_miles, r.lc_miles,
+    r.mi_lc, r.mi_budget, r.age_lc, r.age_budget,
+    r.cpm, r.w_score, '$'+r.price.toLocaleString(),
+    '$'+(r.price_reduction||0).toLocaleString(),
+    '$'+(r.emission_saving||0).toLocaleString(),
+    '$'+(r.total_savings||0).toLocaleString(),
+    '$'+Math.abs(r.excess_maint||0).toLocaleString()
+  ]);
+  const csv = [headers, ...rows].map(r => r.map(v => `"${v}"`).join(',')).join('\n');
+  const blob = new Blob([csv], {type:'text/csv'});
+  const url  = URL.createObjectURL(blob);
+  const a    = document.createElement('a');
+  a.href = url; a.download = 'McCoys_2028_Replacement_Pipeline.csv';
+  a.click(); URL.revokeObjectURL(url);
 }
 
 buildMaintTable(maintT1, "tg-t1-body");
